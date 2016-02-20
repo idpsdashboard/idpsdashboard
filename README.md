@@ -1,4 +1,4 @@
-# idpsdashboard
+#IDPS Dashboard
 IDPS Dashboard - Dashboard for  Open Source Intrusion Detection &amp; Prevention Systems
 
 Esta herramienta ha sido creada en el marco de un Trabajo de Final de Master Universitario en 
