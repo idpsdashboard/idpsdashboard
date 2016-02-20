@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\triton\c$\server_web\saturnodominios.com.ar\idpsdashboard</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>02/11/2016 11:49:39</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>02/01/2016 10:53:23</publishTime>
+    </File>
+    <File Include="bin/dal.SqlServerLibrary.dll">
+      <publishTime>02/11/2016 08:42:43</publishTime>
+    </File>
+    <File Include="bin/IDPSDashboard.Business.dll">
+      <publishTime>02/11/2016 08:42:43</publishTime>
+    </File>
+    <File Include="bin/IDPSDashboard.dll">
+      <publishTime>02/12/2016 16:48:09</publishTime>
+    </File>
+    <File Include="bin/IDPSDashboard.Implement.dll">
+      <publishTime>02/11/2016 08:42:43</publishTime>
+    </File>
+    <File Include="bin/IDPSDashboard.Model.dll">
+      <publishTime>02/10/2016 12:06:12</publishTime>
+    </File>
+    <File Include="bin/IDPSWatcher.exe">
+      <publishTime>02/11/2016 08:42:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/08/2016 10:56:52</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>01/27/2016 08:07:57</publishTime>
+    </File>
+    <File Include="bin/Services.dll">
+      <publishTime>02/10/2016 12:06:13</publishTime>
+    </File>
+    <File Include="ClassDiagram1.cd">
+      <publishTime>02/09/2016 08:05:59</publishTime>
+    </File>
+    <File Include="Dashboard.aspx">
+      <publishTime>02/11/2016 08:35:13</publishTime>
+    </File>
+    <File Include="EventsAlarms.aspx">
+      <publishTime>02/12/2016 12:06:58</publishTime>
+    </File>
+    <File Include="IDPS.aspx">
+      <publishTime>02/11/2016 08:35:31</publishTime>
+    </File>
+    <File Include="images/favicon.ico">
+      <publishTime>02/08/2016 23:33:09</publishTime>
+    </File>
+    <File Include="images/idps.png">
+      <publishTime>01/29/2016 23:48:06</publishTime>
+    </File>
+    <File Include="images/left.png">
+      <publishTime>02/06/2016 18:04:50</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>01/28/2016 23:45:29</publishTime>
+    </File>
+    <File Include="images/rigth.png">
+      <publishTime>02/06/2016 18:05:16</publishTime>
+    </File>
+    <File Include="IntrusionEvents.aspx">
+      <publishTime>02/11/2016 08:35:39</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>02/09/2016 08:46:41</publishTime>
+    </File>
+    <File Include="MasterPage.master">
+      <publishTime>02/10/2016 14:08:21</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/08/2016 10:56:56</publishTime>
+    </File>
+    <File Include="Reports.aspx">
+      <publishTime>02/11/2016 08:36:04</publishTime>
+    </File>
+    <File Include="Severities.aspx">
+      <publishTime>02/11/2016 08:36:12</publishTime>
+    </File>
+    <File Include="SMTP.aspx">
+      <publishTime>02/11/2016 08:36:19</publishTime>
+    </File>
+    <File Include="TaskDetails.aspx">
+      <publishTime>02/11/2016 08:36:28</publishTime>
+    </File>
+    <File Include="Tasks.aspx">
+      <publishTime>02/11/2016 08:36:37</publishTime>
+    </File>
+    <File Include="theme/skin.scss">
+      <publishTime>01/31/2016 10:10:27</publishTime>
+    </File>
+    <File Include="Users.aspx">
+      <publishTime>02/11/2016 08:36:48</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/12/2016 16:43:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

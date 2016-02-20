@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3CA22C0-CBD9-45D4-A9F5-06C624C35633}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDPSDashboard.Business</RootNamespace>
+    <AssemblyName>IDPSDashboard.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="databasestypeBus.cs" />
+    <Compile Include="eventsalarmBus.cs" />
+    <Compile Include="eventsalarm_intrusionevents_mappingBus.cs" />
+    <Compile Include="eventsdetectionBus.cs" />
+    <Compile Include="eventstypeBus.cs" />
+    <Compile Include="idsBus.cs" />
+    <Compile Include="idstypeBus.cs" />
+    <Compile Include="intrusioneventsBus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="severityBus.cs" />
+    <Compile Include="smtpserversBus.cs" />
+    <Compile Include="taskdetailsBus.cs" />
+    <Compile Include="tasksBus.cs" />
+    <Compile Include="taskstatusBus.cs" />
+    <Compile Include="usergroupBus.cs" />
+    <Compile Include="userrolesBus.cs" />
+    <Compile Include="userrolesmappingBus.cs" />
+    <Compile Include="usersBus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IDPSDashboard.Implement\IDPSDashboard.Implement.csproj">
+      <Project>{c8a84026-c377-4788-977a-b7ca2315e442}</Project>
+      <Name>IDPSDashboard.Implement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDPSDashboard.Model\IDPSDashboard.Model.csproj">
+      <Project>{7db46adb-629f-43b5-a826-a0ea0c942102}</Project>
+      <Name>IDPSDashboard.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDPSDashboard\dal.SqlServerLibrary\dal.SqlServerLibrary.csproj">
+      <Project>{d5e234da-6ced-4a73-828f-1f6932df844a}</Project>
+      <Name>dal.SqlServerLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

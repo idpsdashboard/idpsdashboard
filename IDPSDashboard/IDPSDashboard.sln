@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDPSDashboard", "IDPSDashboard\IDPSDashboard.csproj", "{AE5B59F5-4BB2-489D-A9E7-31732917CCE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dal.SqlServerLibrary", "dal.SqlServerLibrary\dal.SqlServerLibrary.csproj", "{D5E234DA-6CED-4A73-828F-1F6932DF844A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{B852D347-ADBF-42ED-8CE7-BDC96B83B3BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDPSDashboard.Model", "..\IDPSDashboard.Model\IDPSDashboard.Model.csproj", "{7DB46ADB-629F-43B5-A826-A0EA0C942102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDPSDashboard.Implement", "..\IDPSDashboard.Implement\IDPSDashboard.Implement.csproj", "{C8A84026-C377-4788-977A-B7CA2315E442}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDPSDashboard.Business", "..\IDPSDashboard.Business\IDPSDashboard.Business.csproj", "{D3CA22C0-CBD9-45D4-A9F5-06C624C35633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDPSWatcher", "IDPSWatcher\IDPSWatcher.csproj", "{407DB7AC-5657-4ED1-8438-420ECA1CD5BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE5B59F5-4BB2-489D-A9E7-31732917CCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5B59F5-4BB2-489D-A9E7-31732917CCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5B59F5-4BB2-489D-A9E7-31732917CCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5B59F5-4BB2-489D-A9E7-31732917CCE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5E234DA-6CED-4A73-828F-1F6932DF844A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E234DA-6CED-4A73-828F-1F6932DF844A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E234DA-6CED-4A73-828F-1F6932DF844A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E234DA-6CED-4A73-828F-1F6932DF844A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B852D347-ADBF-42ED-8CE7-BDC96B83B3BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B852D347-ADBF-42ED-8CE7-BDC96B83B3BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B852D347-ADBF-42ED-8CE7-BDC96B83B3BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B852D347-ADBF-42ED-8CE7-BDC96B83B3BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB46ADB-629F-43B5-A826-A0EA0C942102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB46ADB-629F-43B5-A826-A0EA0C942102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB46ADB-629F-43B5-A826-A0EA0C942102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB46ADB-629F-43B5-A826-A0EA0C942102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A84026-C377-4788-977A-B7CA2315E442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A84026-C377-4788-977A-B7CA2315E442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A84026-C377-4788-977A-B7CA2315E442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A84026-C377-4788-977A-B7CA2315E442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3CA22C0-CBD9-45D4-A9F5-06C624C35633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CA22C0-CBD9-45D4-A9F5-06C624C35633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CA22C0-CBD9-45D4-A9F5-06C624C35633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CA22C0-CBD9-45D4-A9F5-06C624C35633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407DB7AC-5657-4ED1-8438-420ECA1CD5BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407DB7AC-5657-4ED1-8438-420ECA1CD5BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407DB7AC-5657-4ED1-8438-420ECA1CD5BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407DB7AC-5657-4ED1-8438-420ECA1CD5BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

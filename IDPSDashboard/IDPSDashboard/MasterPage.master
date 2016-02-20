@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link rel="shortcut icon" type="image/x-icon" href="~/images/favicon.ico" />
+<link runat="server" rel="icon" href="./images/favicon.ico" type="image/ico"/>
+    <title>:: IDPS Dashboard :: For Open Source IDPS</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        html, body
+        {
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        .full-height
+        {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" class="full-height">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="300" />
+    <div class="full-height">
+        <table 
+            border="0" cellpadding="0" cellspacing="0" class="header" width="100%">
+            <tr>
+                <td>
+                    <br />
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td>
+                                <asp:Image ID="Image1" runat="server" Height="70px" ImageUrl="~/images/logo.png" Width="70px" />
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                 <asp:Image ID="Image2" runat="server" Height="68px" ImageUrl="~/images/idps.png" Width="327px" />
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                </td>
+                <td style="width: 150px; text-align: right;">
+                    <asp:LoginName ID="LoginName1" runat="server" />
+                    <br />
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" Font-Size="Small" />
+                </td>
+            </tr>
+            <tr>
+               <td class="menu" bgcolor="#EFF3FB" colspan="2">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" StaticSubMenuIndent="16px">
+                        <dynamicmenuitemstyle backcolor="#EFF3FB" forecolor="#336699" borderstyle="Solid" borderwidth="1"  bordercolor="#CCCCCC"/>
+                        <Items>
+                            <asp:MenuItem Text="Configuraciones" Value="Configuraciones">
+                                <asp:MenuItem NavigateUrl="./IDPS.aspx" Text="IDPS" Value="IDPS" ToolTip="Configuración IDPS Desplegados"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="./IntrusionEvents.aspx" Text="Eventos de Intrusión" ToolTip="Catalogo de Eventos de Intrusión" Value="Eventos de Intrusión"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="./EventsAlarms.aspx" Text="Eventos Controlados" ToolTip="Especificacion de Eventos controlados" Value="Eventos Controlados"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="./Severities.aspx" Text="Niveles de Criticidad" ToolTip="Niveles de Criticidad" Value="Niveles de Criticidad"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="./Groups.aspx" Text="Grupos y Roles de Usuario" ToolTip="Grupos y Roles de Usuario" Value="Grupos y Roles de Usuario" Selectable="False"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="./SMTP.aspx" Text="SMTP" ToolTip="Servidores SMTP" Value="SMTP" Selectable="False"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="./Users.aspx" Text="Usuarios" ToolTip="Usuarios" Value="Usuarios"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Dashboard" Value="Dashboard">
+                                    <asp:MenuItem NavigateUrl="./Dashboard.aspx" Text="Dashboard" Value="Dashboard"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Tareas" Value="Tareas">
+                                <asp:MenuItem NavigateUrl="./Tasks.aspx" Text="Tareas" Value="Tareas" ToolTip="Tareas de Tratamiento de Eventos"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Reportes" Value="Reportes">
+                                <asp:MenuItem NavigateUrl="./Reports.aspx" Text="Reportes" Value="Reportes"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Acerca de" Value="Acerca de">
+                                <asp:MenuItem NavigateUrl="./About.aspx" Text="Acerca de" Value="Acerca de"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; height: 100%">
+            <tr style="vertical-align: top">
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
