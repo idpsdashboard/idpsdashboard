@@ -26,8 +26,8 @@ namespace dal.SqlServerLibrary.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("JL2SruA0Xpb9xhXJdQBa2o9hJnufGdtuSKn6BeFxZmVBL+eNxkAZqjfrK0KRZw7uPowADr6QRMk4LEpY6" +
-            "hCH2WKSUZCfXa7nMr/lhlN8w40=")]
+        [global::System.Configuration.DefaultSettingValueAttribute("JL2SruA0Xpb9xhXJdQBa2o9hJnufGdtuSKn6BeFxZmX0gehfGbG35J5iVvatkUnHha+75SRnFWAOjGF63" +
+            "j/wxEd/K+7tTET0k/NTDy/TygCsc8IuYDkS5Q==")]
         public string CadenaConexion {
             get {
                 return ((string)(this["CadenaConexion"]));

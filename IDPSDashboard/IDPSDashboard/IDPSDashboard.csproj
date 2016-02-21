@@ -43,6 +43,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
@@ -157,6 +158,11 @@
     <Compile Include="Reports.aspx.designer.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Reports\dtsReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsReport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Severities.aspx.cs">
       <DependentUpon>Severities.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -196,13 +202,23 @@
   <ItemGroup>
     <Content Include="MasterPage.master" />
     <Content Include="packages.config" />
-    <Content Include="ClassDiagram1.cd" />
     <None Include="Properties\PublishProfiles\Enterprise.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Content Include="theme\skin.scss" />
+    <Content Include="Reports\dtsReport.xsc">
+      <DependentUpon>dtsReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\dtsReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\dtsReport.xss">
+      <DependentUpon>dtsReport.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -229,6 +245,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Reports\EventsDetection.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

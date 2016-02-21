@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsReport" targetNamespace="http://tempuri.org/dtsReport.xsd" xmlns:mstns="http://tempuri.org/dtsReport.xsd" xmlns="http://tempuri.org/dtsReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsReport" msprop:Generator_UserDSName="dtsReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dttEventsDetection" msprop:Generator_TableClassName="dttEventsDetectionDataTable" msprop:Generator_TableVarName="tabledttEventsDetection" msprop:Generator_TablePropName="dttEventsDetection" msprop:Generator_RowDeletingName="dttEventsDetectionRowDeleting" msprop:Generator_RowChangingName="dttEventsDetectionRowChanging" msprop:Generator_RowEvHandlerName="dttEventsDetectionRowChangeEventHandler" msprop:Generator_RowDeletedName="dttEventsDetectionRowDeleted" msprop:Generator_UserTableName="dttEventsDetection" msprop:Generator_RowChangedName="dttEventsDetectionRowChanged" msprop:Generator_RowEvArgName="dttEventsDetectionRowChangeEvent" msprop:Generator_RowClassName="dttEventsDetectionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="eventsDetectionId" msprop:Generator_ColumnVarNameInTable="columneventsDetectionId" msprop:Generator_ColumnPropNameInRow="eventsDetectionId" msprop:Generator_ColumnPropNameInTable="eventsDetectionIdColumn" msprop:Generator_UserColumnName="eventsDetectionId" type="xs:int" minOccurs="0" />
+              <xs:element name="dateTime" msprop:Generator_ColumnVarNameInTable="columndateTime" msprop:Generator_ColumnPropNameInRow="dateTime" msprop:Generator_ColumnPropNameInTable="dateTimeColumn" msprop:Generator_UserColumnName="dateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="tasktittle" msprop:Generator_ColumnVarNameInTable="columntasktittle" msprop:Generator_ColumnPropNameInRow="tasktittle" msprop:Generator_ColumnPropNameInTable="tasktittleColumn" msprop:Generator_UserColumnName="tasktittle" type="xs:string" minOccurs="0" />
+              <xs:element name="taskStatusDescription" msprop:Generator_ColumnVarNameInTable="columntaskStatusDescription" msprop:Generator_ColumnPropNameInRow="taskStatusDescription" msprop:Generator_ColumnPropNameInTable="taskStatusDescriptionColumn" msprop:Generator_UserColumnName="taskStatusDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="idsname" msprop:Generator_ColumnVarNameInTable="columnidsname" msprop:Generator_ColumnPropNameInRow="idsname" msprop:Generator_ColumnPropNameInTable="idsnameColumn" msprop:Generator_UserColumnName="idsname" type="xs:string" minOccurs="0" />
+              <xs:element name="eventsAlarmId" msprop:Generator_ColumnVarNameInTable="columneventsAlarmId" msprop:Generator_ColumnPropNameInRow="eventsAlarmId" msprop:Generator_ColumnPropNameInTable="eventsAlarmIdColumn" msprop:Generator_UserColumnName="eventsAlarmId" type="xs:int" minOccurs="0" />
+              <xs:element name="severitydescription" msprop:Generator_ColumnVarNameInTable="columnseveritydescription" msprop:Generator_ColumnPropNameInRow="severitydescription" msprop:Generator_ColumnPropNameInTable="severitydescriptionColumn" msprop:Generator_UserColumnName="severitydescription" type="xs:string" minOccurs="0" />
+              <xs:element name="SLATimeToResponse" msprop:Generator_ColumnVarNameInTable="columnSLATimeToResponse" msprop:Generator_ColumnPropNameInRow="SLATimeToResponse" msprop:Generator_ColumnPropNameInTable="SLATimeToResponseColumn" msprop:Generator_UserColumnName="SLATimeToResponse" type="xs:string" minOccurs="0" />
+              <xs:element name="taskid" msprop:Generator_ColumnVarNameInTable="columntaskid" msprop:Generator_ColumnPropNameInRow="taskid" msprop:Generator_ColumnPropNameInTable="taskidColumn" msprop:Generator_UserColumnName="taskid" type="xs:int" minOccurs="0" />
+              <xs:element name="idpsEventId" msprop:Generator_ColumnVarNameInTable="columnidpsEventId" msprop:Generator_ColumnPropNameInRow="idpsEventId" msprop:Generator_ColumnPropNameInTable="idpsEventIdColumn" msprop:Generator_UserColumnName="idpsEventId" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

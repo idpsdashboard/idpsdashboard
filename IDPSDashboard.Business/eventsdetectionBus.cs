@@ -48,6 +48,12 @@ namespace IDPSDashboard.Business
 			return oeventsdetectionImpl.eventsdetectionGetAll();
 		}
 
+        public DataTable eventsdetectionGetAllByIDPSId(int idpsId)
+        {
+            eventsdetectionImpl oeventsdetectionImpl = new eventsdetectionImpl();
+            return oeventsdetectionImpl.eventsdetectionGetAllByIDPSId(idpsId);
+        }
+
 		#endregion
 	}
 }

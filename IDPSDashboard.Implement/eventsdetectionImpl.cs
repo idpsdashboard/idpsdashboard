@@ -159,7 +159,24 @@ namespace IDPSDashboard.Implement
 			}
 		}
 
-		#endregion
+        public DataTable eventsdetectionGetAllByIDPSId(int idpsId)
+        {
+            DataTable dt = new DataTable();
+            
+            try
+            {
+                dt = SqlHelper.ExecuteDataset(SqlImplHelper.getConnectionString(), "eventsdetectionGetAllByIDPSId",
+                                                                                             idpsId).Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return dt;
+        }
+        
+        #endregion
 
 	}
 }
